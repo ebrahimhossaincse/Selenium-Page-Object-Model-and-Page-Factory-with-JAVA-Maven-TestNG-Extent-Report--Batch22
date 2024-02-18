@@ -8,20 +8,8 @@ import com.ebrahim.qa.utilities.CommonMethods;
 
 public class EmployeeTest extends CommonMethods{
 	
-	@BeforeClass
-	public void openUrl() throws InterruptedException {
-		PageDriver.getCurrentDriver().get(url);
-		timeout();
-	}
-	
-	@Test(priority = 0)
-	public void testLoginMethod() {
-		LoginPage loginPage = new LoginPage();
-		loginPage.login();
-	}
-	
-	@Test (priority = 1)
+	@Test 
 	public void addEmployee() {
-		
+		System.out.println(PageDriver.getCurrentDriver().getTitle());
 	}
 }
