@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-17T11:42:39 EST" name="Default suite" finished-at="2024-02-17T11:43:00 EST" duration-ms="20542">
+    <groups>
+    </groups>
+    <test started-at="2024-02-17T11:42:39 EST" name="Default test" finished-at="2024-02-17T11:43:00 EST" duration-ms="20542">
+      <class name="com.ebrahim.qa.tests.LoginTest">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.ebrahim.qa.tests.LoginTest@183ec003]" started-at="2024-02-17T11:42:37 EST" name="startBrowser" finished-at="2024-02-17T11:42:39 EST" duration-ms="1661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method is-config="true" signature="start()[pri:0, instance:com.ebrahim.qa.tests.LoginTest@183ec003]" started-at="2024-02-17T11:42:39 EST" name="start" finished-at="2024-02-17T11:42:50 EST" duration-ms="11217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="testLoginMethod()[pri:0, instance:com.ebrahim.qa.tests.LoginTest@183ec003]" started-at="2024-02-17T11:42:50 EST" name="testLoginMethod" finished-at="2024-02-17T11:43:00 EST" duration-ms="9282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginMethod -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.ebrahim.qa.tests.LoginTest@183ec003]" started-at="2024-02-17T11:43:00 EST" name="close" finished-at="2024-02-17T11:43:00 EST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.ebrahim.qa.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
