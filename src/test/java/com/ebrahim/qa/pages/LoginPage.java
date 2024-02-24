@@ -10,11 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.ebrahim.qa.drivers.PageDriver;
+import com.ebrahim.qa.utilities.ExcelUtils;
 import com.ebrahim.qa.utilities.GetScreenShot;
 
 public class LoginPage {
 
 	ExtentTest test;
+	
+	ExcelUtils excelUtils = new ExcelUtils();
 	
 	public LoginPage(ExtentTest test) {
 		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
@@ -60,16 +63,18 @@ public class LoginPage {
 	}
 
 	public void login() throws IOException {
+		excelUtils.writeExcelData("Ebrahim", "Hossain", "ebrahim@gmail.com", "1234561441", "1216");
+		excelUtils.ReadExcel();
 		try {
 			test.info("Please enter your username.");
 			if (userName.isDisplayed()) {
-				userName.sendKeys("Admin");
+				userName.sendKeys(excelUtils.username);
 				passCase("You have entered your username");
 				Thread.sleep(2000);
 				try {
 					test.info("Please enter your password.");
 					if (password.isDisplayed()) {
-						password.sendKeys("admin123");
+						password.sendKeys(excelUtils.password);
 						passCase("You have entered your password");
 						Thread.sleep(2000);
 						try {
